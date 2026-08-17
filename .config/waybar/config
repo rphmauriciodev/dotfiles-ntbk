@@ -1,0 +1,132 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "margin-top": 8,
+    "margin-left": 16,
+    "margin-right": 16,
+    "spacing": 6,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+    // Choose the order of the modules
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network",
+        "tray",
+        "custom/power"
+    ],
+
+    // Modules configuration
+    "custom/logo": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "rofi -show drun || wofi --show drun || hyprlauncher"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "hyprland/window": {
+        "format": "󰘔 {title}",
+        "max-length": 35,
+        "separate-outputs": true,
+        "rewrite": {
+            "": "Área de Trabalho",
+            "(.*) — Mozilla Firefox": "Firefox 󰈹",
+            "(.*)Mozilla Firefox": "Firefox 󰈹",
+            "(.*) - Visual Studio Code": "VSCode 󰨞",
+            "(.*)Visual Studio Code": "VSCode 󰨞",
+            "(.*) — Dolphin": "Dolphin 󰉋",
+            "(.*)Spotify": "Spotify 󰓇",
+            "(.*)Steam": "Steam 󰓓",
+            "alacritty": "Terminal ",
+            "(.*)Alacritty": "Terminal "
+        }
+    },
+
+    "clock": {
+        "format": "󰸗 {:%a, %b %d   %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰈈",
+            "deactivated": "󰖔"
+        },
+        "tooltip": true,
+        "tooltip-format-activated": "Prevenção de suspensão: Ativada",
+        "tooltip-format-deactivated": "Prevenção de suspensão: Desativada"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "  {usage}%",
+        "tooltip": true
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "  {percentage}%",
+        "tooltip-format": "Memória Usada: {used:0.1f}GB / {total:0.1f}GB"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  Muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "󰤨  {essid}",
+        "format-ethernet": "󱘖  Wired",
+        "format-disconnected": "󰤭  Desconectado",
+        "tooltip-format-wifi": "Sinal: {signalStrength}%\nIP: {ipaddr}",
+        "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
+        "tooltip-format-disconnected": "Sem conexão de rede",
+        "on-click": "alacritty -e nmtui"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    }
+}

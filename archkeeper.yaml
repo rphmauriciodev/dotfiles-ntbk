@@ -1,0 +1,37 @@
+packages:
+    backup_enabled: true
+    pacman_file: pkglist.txt
+    aur_file: pkglist-aur.txt
+files:
+    - source: .zshrc
+      target: .zshrc
+    - source: Downloads/broly_vasco.png
+      target: Downloads/broly_vasco.png
+    - source: Downloads/greninja_vasco.png
+      target: Downloads/greninja_vasco.png
+    - source: .config/alacritty.toml
+      target: .config/alacritty.toml
+    - source: .config/gtk-3.0
+      target: .config/gtk-3.0
+    - source: .config/helix
+      target: .config/helix
+    - source: .config/hypr
+      target: .config/hypr
+    - source: .config/starship.toml
+      target: .config/starship.toml
+    - source: .config/waybar
+      target: .config/waybar
+    - source: .config/yay
+      target: .config/yay
+    - source: .config/zed
+      target: .config/zed
+    - source: .config/archkeeper
+      target: .config/archkeeper
+    - source: documents/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O’Reilly-Media-(2017).pdf
+      target: documents/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O’Reilly-Media-(2017).pdf
+    - source: documents/Raphael_Mauricio_BCK.pdf
+      target: documents/Raphael_Mauricio_BCK.pdf
+    - source: .config/chromium/Default/Web Applications
+      target: .config/chromium/Default/Web Applications
+    - source: Downloads/pokevasco.png
+      target: Downloads/pokevasco.png

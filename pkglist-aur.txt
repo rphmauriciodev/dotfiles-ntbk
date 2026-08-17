@@ -1,0 +1,7 @@
+anydesk-bin
+google-chrome
+postman-bin
+spotify
+vesktop
+yay
+yay-debug

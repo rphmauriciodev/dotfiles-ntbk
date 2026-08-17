@@ -1,0 +1,12 @@
+# Ignore temporary/binary folders of Antigravity inside root/.gemini
+root/.gemini/antigravity-cli/brain/
+root/.gemini/antigravity-cli/bin/
+root/.gemini/antigravity-cli/builtin/
+root/.gemini/antigravity-cli/cache/
+root/.gemini/antigravity-cli/log/
+root/.gemini/antigravity-cli/updater/
+root/.gemini/antigravity-cli/implicit/
+root/.gemini/antigravity-cli/knowledge/
+root/.gemini/antigravity-cli/*.log
+root/.gemini/antigravity-cli/conversations/*.db-shm
+root/.gemini/antigravity-cli/conversations/*.db-wal
