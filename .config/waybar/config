@@ -25,6 +25,7 @@
         "memory",
         "pulseaudio",
         "network",
+        "battery",
         "tray",
         "custom/power"
     ],
@@ -117,6 +118,19 @@
         "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
         "tooltip-format-disconnected": "Sem conexão de rede",
         "on-click": "alacritty -e nmtui"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "tray": {

@@ -7,6 +7,7 @@ base-devel
 bottom
 chromium
 cmake
+code
 dbeaver
 discord
 dkms
@@ -91,7 +92,6 @@ xdg-desktop-portal-hyprland
 xorg-server
 xorg-xinit
 yazi
-zed
 zip
 zram-generator
 zsh
