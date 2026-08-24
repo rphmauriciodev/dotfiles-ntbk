@@ -15,6 +15,7 @@ docker
 docker-compose
 dotnet-sdk
 efibootmgr
+featherpad
 ffmpeg
 firefox
 firefox-i18n-pt-br
@@ -23,6 +24,7 @@ git
 git-crypt
 github-cli
 go
+godot
 grim
 grub
 gst-libav
