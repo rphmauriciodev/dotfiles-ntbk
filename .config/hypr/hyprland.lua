@@ -22,8 +22,8 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "DP-3",
-    mode     = "1920x1080@144",
+    output   = "eDP-1",
+    mode     = "1366x768@60",
     position = "0x0",
     scale    = 1,
 })
@@ -31,7 +31,7 @@ hl.monitor({
 hl.monitor({
    output    = "HDMI-A-1",
    mode      = "1920x1080@75",
-   position  = "1920x-540",
+   position  = "1366x-1080",
    scale     = 1,
    transform = 3
 })
@@ -392,7 +392,7 @@ hl.window_rule({
 })
 
 for i = 1, 10 do
-    local monitor = (i % 2 == 0) and "HDMI-A-1" or "DP-3"
+    local monitor = (i % 2 == 0) and "HDMI-A-1" or "eDP-1"
     local default = (i == 1 or i == 2) and true or false
     hl.workspace_rule({ workspace = tostring(i), monitor = monitor, default = default})
 end

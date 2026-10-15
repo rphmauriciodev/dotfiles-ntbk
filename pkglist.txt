@@ -22,9 +22,11 @@ firefox-i18n-pt-br
 gdb
 git
 git-crypt
+git-filter-repo
 github-cli
 go
 godot
+gptfdisk
 grim
 grub
 gst-libav
@@ -40,9 +42,12 @@ intel-media-driver
 intel-ucode
 iwd
 judy
+kind
+kubectl
 lib32-nvidia-utils
 lib32-opencl-nvidia
 libpulse
+libreoffice-still
 libva-intel-driver
 libva-nvidia-driver
 linux
@@ -52,12 +57,14 @@ linux-lts-headers
 linux-zen
 linux-zen-headers
 lksctp-tools
+meld
 neovim
 networkmanager
 noto-fonts
 noto-fonts-emoji
 nvidia-open-dkms
 nvidia-settings
+obs-studio
 opencl-nvidia
 openssh
 pipewire
@@ -68,6 +75,7 @@ platformio-core
 platformio-core-udev
 python-legacy-cgi
 slurp
+spotify-player
 starship
 steam
 stress-ng
@@ -76,6 +84,7 @@ swappy
 tcpdump
 tealdeer
 termshark
+terraform
 tmux
 transmission-gtk
 ttf-cascadia-code-nerd

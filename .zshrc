@@ -127,3 +127,4 @@ export PATH="$PATH:/home/rphmauricio/.local/bin"
 
 # Added by Antigravity CLI installer
 export PATH="/home/rphmauricio/.local/bin:$PATH"
+alias spotify="~/bin/spt"
